@@ -1,0 +1,10 @@
+---
+applications:
+- name: moviefun
+  host: movie-fun-sk
+  memory: 1GB
+  instances: 1
+  path: target/moviefun.war
+  buildpack: https://github.com/cloudfoundry-community/tomee-buildpack.git
+services:
+- movies-mysql
